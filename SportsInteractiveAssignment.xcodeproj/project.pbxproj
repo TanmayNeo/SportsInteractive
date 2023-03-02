@@ -8,22 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		18AF970129AF68880099A933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF970029AF68880099A933 /* AppDelegate.swift */; };
-		18AF970329AF68880099A933 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF970229AF68880099A933 /* SceneDelegate.swift */; };
-		18AF970529AF68880099A933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF970429AF68880099A933 /* ViewController.swift */; };
-		18AF970829AF68880099A933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AF970629AF68880099A933 /* Main.storyboard */; };
+		18AF970529AF68880099A933 /* MatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF970429AF68880099A933 /* MatchListViewController.swift */; };
 		18AF970A29AF688B0099A933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AF970929AF688B0099A933 /* Assets.xcassets */; };
 		18AF970D29AF688B0099A933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AF970B29AF688B0099A933 /* LaunchScreen.storyboard */; };
+		18B1831129B06392008D0E4E /* MatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B1831029B06392008D0E4E /* MatchListViewModel.swift */; };
+		18B1831329B06CAE008D0E4E /* MatchListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B1831229B06CAE008D0E4E /* MatchListResponse.swift */; };
+		18B1831529B06EB1008D0E4E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B1831429B06EB1008D0E4E /* Repository.swift */; };
+		18BC636F29AF6E8700906E21 /* MatchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC636D29AF6E8700906E21 /* MatchListCell.swift */; };
+		18BC637029AF6E8700906E21 /* MatchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BC636E29AF6E8700906E21 /* MatchListCell.xib */; };
+		18BC637329AF74F300906E21 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC637229AF74F300906E21 /* NetworkManager.swift */; };
+		18BC637529AF774A00906E21 /* MatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BC637429AF774A00906E21 /* MatchListViewController.xib */; };
+		18BC637829AF7ACC00906E21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC637729AF7ACC00906E21 /* Constants.swift */; };
+		18F8726829B0972000C1E6FE /* MatchDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8726729B0972000C1E6FE /* MatchDetailsViewController.xib */; };
+		18F8726A29B0974F00C1E6FE /* MatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8726929B0974F00C1E6FE /* MatchDetailsViewController.swift */; };
+		18F8726E29B09EFD00C1E6FE /* MatchDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8726C29B09EFD00C1E6FE /* MatchDetailsCell.swift */; };
+		18F8726F29B09EFD00C1E6FE /* MatchDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8726D29B09EFD00C1E6FE /* MatchDetailsCell.xib */; };
+		18F8727129B0A29500C1E6FE /* MatchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8727029B0A29500C1E6FE /* MatchDetailsViewModel.swift */; };
+		18F8727A29B111AE00C1E6FE /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8727829B111AE00C1E6FE /* PlayerDetailsViewController.swift */; };
+		18F8727B29B111AE00C1E6FE /* PlayerDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8727929B111AE00C1E6FE /* PlayerDetailsViewController.xib */; };
+		F49E93555729B275A058C318 /* Pods_SportsInteractiveAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADDF1DE690C9EDA5EAF28DA /* Pods_SportsInteractiveAssignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18AF96FD29AF68880099A933 /* SportsInteractiveAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsInteractiveAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AF970029AF68880099A933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18AF970229AF68880099A933 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18AF970429AF68880099A933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18AF970729AF68880099A933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18AF970429AF68880099A933 /* MatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewController.swift; sourceTree = "<group>"; };
 		18AF970929AF688B0099A933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AF970C29AF688B0099A933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AF970E29AF688B0099A933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B1831029B06392008D0E4E /* MatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModel.swift; sourceTree = "<group>"; };
+		18B1831229B06CAE008D0E4E /* MatchListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListResponse.swift; sourceTree = "<group>"; };
+		18B1831429B06EB1008D0E4E /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		18BC636D29AF6E8700906E21 /* MatchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCell.swift; sourceTree = "<group>"; };
+		18BC636E29AF6E8700906E21 /* MatchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchListCell.xib; sourceTree = "<group>"; };
+		18BC637229AF74F300906E21 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18BC637429AF774A00906E21 /* MatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchListViewController.xib; sourceTree = "<group>"; };
+		18BC637729AF7ACC00906E21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18F8726729B0972000C1E6FE /* MatchDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailsViewController.xib; sourceTree = "<group>"; };
+		18F8726929B0974F00C1E6FE /* MatchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewController.swift; sourceTree = "<group>"; };
+		18F8726C29B09EFD00C1E6FE /* MatchDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsCell.swift; sourceTree = "<group>"; };
+		18F8726D29B09EFD00C1E6FE /* MatchDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailsCell.xib; sourceTree = "<group>"; };
+		18F8727029B0A29500C1E6FE /* MatchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModel.swift; sourceTree = "<group>"; };
+		18F8727829B111AE00C1E6FE /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		18F8727929B111AE00C1E6FE /* PlayerDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerDetailsViewController.xib; sourceTree = "<group>"; };
+		32CCEE454A3A061CBBBCDC8F /* Pods-SportsInteractiveAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsInteractiveAssignment.debug.xcconfig"; path = "Target Support Files/Pods-SportsInteractiveAssignment/Pods-SportsInteractiveAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		5ADDF1DE690C9EDA5EAF28DA /* Pods_SportsInteractiveAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsInteractiveAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA15C538A4E91F2A0712E6D8 /* Pods-SportsInteractiveAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsInteractiveAssignment.release.xcconfig"; path = "Target Support Files/Pods-SportsInteractiveAssignment/Pods-SportsInteractiveAssignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49E93555729B275A058C318 /* Pods_SportsInteractiveAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +73,8 @@
 			children = (
 				18AF96FF29AF68880099A933 /* SportsInteractiveAssignment */,
 				18AF96FE29AF68880099A933 /* Products */,
+				514756F73A9A889BB88F96B2 /* Pods */,
+				D279D5348505E1D1B2EA4417 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,125 @@
 		18AF96FF29AF68880099A933 /* SportsInteractiveAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				18BC637629AF7AA800906E21 /* Constants */,
+				18BC637129AF74DE00906E21 /* ServiceManager */,
+				18AF971529AF6CB60099A933 /* Model */,
+				18AF971429AF6CA50099A933 /* View */,
+				18AF971629AF6CBD0099A933 /* ViewModel */,
 				18AF970029AF68880099A933 /* AppDelegate.swift */,
-				18AF970229AF68880099A933 /* SceneDelegate.swift */,
-				18AF970429AF68880099A933 /* ViewController.swift */,
-				18AF970629AF68880099A933 /* Main.storyboard */,
 				18AF970929AF688B0099A933 /* Assets.xcassets */,
 				18AF970B29AF688B0099A933 /* LaunchScreen.storyboard */,
 				18AF970E29AF688B0099A933 /* Info.plist */,
 			);
 			path = SportsInteractiveAssignment;
+			sourceTree = "<group>";
+		};
+		18AF971429AF6CA50099A933 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18AF971D29AF6D730099A933 /* Views */,
+				18AF971829AF6D140099A933 /* ViewControllers */,
+				18AF971729AF6D050099A933 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18AF971529AF6CB60099A933 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18B1831229B06CAE008D0E4E /* MatchListResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AF971629AF6CBD0099A933 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18B1831029B06392008D0E4E /* MatchListViewModel.swift */,
+				18F8727029B0A29500C1E6FE /* MatchDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18AF971729AF6D050099A933 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18F8726B29B09ED600C1E6FE /* MatchDetailsCell */,
+				18AF971E29AF6DA50099A933 /* MatchListCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18AF971829AF6D140099A933 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18F8727829B111AE00C1E6FE /* PlayerDetailsViewController.swift */,
+				18AF970429AF68880099A933 /* MatchListViewController.swift */,
+				18F8726929B0974F00C1E6FE /* MatchDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18AF971D29AF6D730099A933 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18BC637429AF774A00906E21 /* MatchListViewController.xib */,
+				18F8726729B0972000C1E6FE /* MatchDetailsViewController.xib */,
+				18F8727929B111AE00C1E6FE /* PlayerDetailsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18AF971E29AF6DA50099A933 /* MatchListCell */ = {
+			isa = PBXGroup;
+			children = (
+				18BC636D29AF6E8700906E21 /* MatchListCell.swift */,
+				18BC636E29AF6E8700906E21 /* MatchListCell.xib */,
+			);
+			path = MatchListCell;
+			sourceTree = "<group>";
+		};
+		18BC637129AF74DE00906E21 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				18BC637229AF74F300906E21 /* NetworkManager.swift */,
+				18B1831429B06EB1008D0E4E /* Repository.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		18BC637629AF7AA800906E21 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				18BC637729AF7ACC00906E21 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		18F8726B29B09ED600C1E6FE /* MatchDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				18F8726C29B09EFD00C1E6FE /* MatchDetailsCell.swift */,
+				18F8726D29B09EFD00C1E6FE /* MatchDetailsCell.xib */,
+			);
+			path = MatchDetailsCell;
+			sourceTree = "<group>";
+		};
+		514756F73A9A889BB88F96B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32CCEE454A3A061CBBBCDC8F /* Pods-SportsInteractiveAssignment.debug.xcconfig */,
+				DA15C538A4E91F2A0712E6D8 /* Pods-SportsInteractiveAssignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D279D5348505E1D1B2EA4417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ADDF1DE690C9EDA5EAF28DA /* Pods_SportsInteractiveAssignment.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18AF971129AF688B0099A933 /* Build configuration list for PBXNativeTarget "SportsInteractiveAssignment" */;
 			buildPhases = (
+				EC131E0C730C3CDEA64BDF7F /* [CP] Check Pods Manifest.lock */,
 				18AF96F929AF68880099A933 /* Sources */,
 				18AF96FA29AF68880099A933 /* Frameworks */,
 				18AF96FB29AF68880099A933 /* Resources */,
+				49DDDFF24E26082B6F8B49ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +270,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BC637529AF774A00906E21 /* MatchListViewController.xib in Resources */,
+				18F8727B29B111AE00C1E6FE /* PlayerDetailsViewController.xib in Resources */,
 				18AF970D29AF688B0099A933 /* LaunchScreen.storyboard in Resources */,
+				18F8726F29B09EFD00C1E6FE /* MatchDetailsCell.xib in Resources */,
+				18F8726829B0972000C1E6FE /* MatchDetailsViewController.xib in Resources */,
 				18AF970A29AF688B0099A933 /* Assets.xcassets in Resources */,
-				18AF970829AF68880099A933 /* Main.storyboard in Resources */,
+				18BC637029AF6E8700906E21 /* MatchListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49DDDFF24E26082B6F8B49ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportsInteractiveAssignment/Pods-SportsInteractiveAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportsInteractiveAssignment/Pods-SportsInteractiveAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SportsInteractiveAssignment/Pods-SportsInteractiveAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC131E0C730C3CDEA64BDF7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportsInteractiveAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18AF96F929AF68880099A933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18AF970529AF68880099A933 /* ViewController.swift in Sources */,
+				18B1831329B06CAE008D0E4E /* MatchListResponse.swift in Sources */,
+				18BC637829AF7ACC00906E21 /* Constants.swift in Sources */,
+				18F8727A29B111AE00C1E6FE /* PlayerDetailsViewController.swift in Sources */,
+				18F8726E29B09EFD00C1E6FE /* MatchDetailsCell.swift in Sources */,
+				18BC637329AF74F300906E21 /* NetworkManager.swift in Sources */,
+				18B1831529B06EB1008D0E4E /* Repository.swift in Sources */,
+				18AF970529AF68880099A933 /* MatchListViewController.swift in Sources */,
+				18F8726A29B0974F00C1E6FE /* MatchDetailsViewController.swift in Sources */,
 				18AF970129AF68880099A933 /* AppDelegate.swift in Sources */,
-				18AF970329AF68880099A933 /* SceneDelegate.swift in Sources */,
+				18B1831129B06392008D0E4E /* MatchListViewModel.swift in Sources */,
+				18BC636F29AF6E8700906E21 /* MatchListCell.swift in Sources */,
+				18F8727129B0A29500C1E6FE /* MatchDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18AF970629AF68880099A933 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18AF970729AF68880099A933 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18AF970B29AF688B0099A933 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +474,7 @@
 		};
 		18AF971229AF688B0099A933 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CCEE454A3A061CBBBCDC8F /* Pods-SportsInteractiveAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +484,7 @@
 				INFOPLIST_FILE = SportsInteractiveAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +502,7 @@
 		};
 		18AF971329AF688B0099A933 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA15C538A4E91F2A0712E6D8 /* Pods-SportsInteractiveAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,7 +512,7 @@
 				INFOPLIST_FILE = SportsInteractiveAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
