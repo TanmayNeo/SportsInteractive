@@ -2,18 +2,13 @@
 //  Repository.swift
 //  SportsInteractiveAssignment
 //
-//  Created by apple on 02/03/23.
+//  Created by Tanmay on 03/03/23.
 //
 
 import Foundation
 
 class Repository {
-    static let shared = Repository()
     private let networkManager = NetworkManager.shared
-    
-    private init(){
-        
-    }
     
     ///Returns the list of matches
     ///Parameters :

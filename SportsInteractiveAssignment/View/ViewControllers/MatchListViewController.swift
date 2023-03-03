@@ -11,9 +11,11 @@ class MatchListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var viewModel : MatchListViewModel?
+    private lazy var viewModel : MatchListViewModel = {
+        return MatchListViewModel(repository: Repository())
+    }()
+    
     override func viewDidLoad() {
-        viewModel = MatchListViewModel()
         super.viewDidLoad()
         setup()
         callbacks()
@@ -21,7 +23,7 @@ class MatchListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel?.getMatchDetails()
+        viewModel.getMatchDetails()
     }
     
     ///To set up the navigation title and register XIB cells for the table view
@@ -33,7 +35,7 @@ class MatchListViewController: UIViewController {
     
     ///To reload the table after the data from the API call has been received
     func callbacks(){
-        viewModel?.reloadTable = {
+        viewModel.reloadTable = {
             self.tableView.reloadData()
         }
     }
@@ -42,37 +44,42 @@ class MatchListViewController: UIViewController {
 
 /// To setup the count of cells and height of the table view
 extension MatchListViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.matchesArray?.count ?? 0
+        return viewModel.matchesArray.count
+    }
+   
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.matchListCell) as! MatchListCell
+        let team =  viewModel.matchesArray[indexPath.row]
+        let teamHome = team.teams[team.matchdetail.teamHome]?.nameShort ?? ""
+        let teamAway = team.teams[team.matchdetail.teamAway]?.nameShort ?? ""
+        let date = DateFormator.getFormatedString(strDate:team.matchdetail.match.date)
+        cell.setupData(teamHome,
+                       secondTeamName: teamAway,
+                       timing:date,
+                       stadium: team.matchdetail.venue.name)
+        return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
 }
 
 
 ///To setup the data in tableview
 extension MatchListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.matchListCell) as! MatchListCell
-        cell.setupData(viewModel?.getHomeTeamShortName(index: indexPath.row),
-                       secondTeamName: viewModel?.getAwayTeamShortName(index: indexPath.row),
-                       timing: viewModel?.getTimings(index: indexPath.row),
-                       stadium: viewModel?.getVenue(index: indexPath.row)?.name)
-        return cell
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        DispatchQueue.main.async {
-            let vc = MatchDetailsViewController(nibName: Constants.matchDetailsViewController,
-                                                bundle: nil)
-            vc.viewModel = MatchDetailsViewModel(teamHome: self.viewModel?.getHomeTeam(index: indexPath.row),
-                                                 teamAway: self.viewModel?.getAwayTeam(index: indexPath.row))
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-       
+        let team =  viewModel.matchesArray[indexPath.row]
+        let teamHome = team.teams[team.matchdetail.teamHome]
+        let teamAway = team.teams[team.matchdetail.teamAway]
+        let vc = MatchDetailsViewController(nibName: Constants.matchDetailsViewController,
+                                            bundle: nil)
+        vc.viewModel = MatchDetailsViewModel(teamHome: teamHome,
+                                             teamAway: teamAway)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 

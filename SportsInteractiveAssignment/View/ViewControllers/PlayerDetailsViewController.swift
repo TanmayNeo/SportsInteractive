@@ -2,7 +2,7 @@
 //  PlayerDetailsViewController.swift
 //  SportsInteractiveAssignment
 //
-//  Created by apple on 02/03/23.
+//  Created by Tanmay on 03/03/23.
 //
 
 import UIKit
