@@ -70,9 +70,11 @@ class MatchDetailsViewController: UIViewController {
 extension MatchDetailsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       
-        let vc = PlayerDetailsViewController(nibName: Constants.playerDetailsViewController, bundle: nil)
-        vc.player = playerArray?[indexPath.row]
-        self.present(vc, animated: true)
+        DispatchQueue.main.async {
+            let vc = PlayerDetailsViewController(nibName: Constants.playerDetailsViewController, bundle: nil)
+            vc.player = self.playerArray?[indexPath.row]
+            self.present(vc, animated: true)
+        }
         
     }
     

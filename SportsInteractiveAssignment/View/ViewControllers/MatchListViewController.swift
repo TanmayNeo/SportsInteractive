@@ -64,13 +64,15 @@ extension MatchListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = MatchDetailsViewController(nibName: Constants.matchDetailsViewController,
-                                            bundle: nil)
-        vc.viewModel = MatchDetailsViewModel(teamHome: viewModel?.getHomeTeam(index: indexPath.row),
-                                             teamAway: viewModel?.getAwayTeam(index: indexPath.row))
-        self.navigationController?.pushViewController(vc, animated: true)
+        DispatchQueue.main.async {
+            let vc = MatchDetailsViewController(nibName: Constants.matchDetailsViewController,
+                                                bundle: nil)
+            vc.viewModel = MatchDetailsViewModel(teamHome: viewModel?.getHomeTeam(index: indexPath.row),
+                                                 teamAway: viewModel?.getAwayTeam(index: indexPath.row))
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+       
     }
-    
     
 }
 
