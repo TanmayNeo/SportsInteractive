@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 
 ///Endpoints shall be added here to be appended with the base URL for API calls
 enum EndPoints : String {

@@ -38,7 +38,7 @@ class MatchDetailsViewController: UIViewController {
         teamFilter.insertSegment(withTitle: viewModel?.getHomeTeamName(), at: 1, animated: false)
         teamFilter.insertSegment(withTitle: viewModel?.getAwayTeamName(), at: 2, animated: false)
         teamFilter.selectedSegmentIndex = 1
-        selectTeam(teamFilter)
+        selectTeam(teamFilter!)
     }
     
     ///To change the values of the players and set the table accordingly when the segment control is operated

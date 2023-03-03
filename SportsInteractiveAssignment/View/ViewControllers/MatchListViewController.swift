@@ -67,8 +67,8 @@ extension MatchListViewController: UITableViewDelegate {
         DispatchQueue.main.async {
             let vc = MatchDetailsViewController(nibName: Constants.matchDetailsViewController,
                                                 bundle: nil)
-            vc.viewModel = MatchDetailsViewModel(teamHome: viewModel?.getHomeTeam(index: indexPath.row),
-                                                 teamAway: viewModel?.getAwayTeam(index: indexPath.row))
+            vc.viewModel = MatchDetailsViewModel(teamHome: self.viewModel?.getHomeTeam(index: indexPath.row),
+                                                 teamAway: self.viewModel?.getAwayTeam(index: indexPath.row))
             self.navigationController?.pushViewController(vc, animated: true)
         }
        
