@@ -20,6 +20,7 @@ class MatchListViewModel {
         
     }
     
+    ///Makes asynchronous API calls to get the list of matches and reloads the table after the data or an error has been received
     func getMatchDetails () {
         dispatchGroup.enter()
         repository.getMatchList(.matchList1, toModel: MatchList.self) { response in
@@ -89,7 +90,7 @@ class MatchListViewModel {
     func getTimings(index : Int) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "M/dd/yyyy"
-        let dateString = self.matchesArray?[index]?.matchdetail.match.date ?? "" //"\(self.matchesArray?[index]?.matchdetail.match.date ?? "") \(self.matchesArray?[index]?.matchdetail.match.time ?? "")"
+        let dateString = self.matchesArray?[index]?.matchdetail.match.date ?? ""
         guard let matchDate = dateFormatter.date(from: dateString) else { return ""}
         
         return dateFormatter.string(from: matchDate)
@@ -99,36 +100,4 @@ class MatchListViewModel {
         return self.matchesArray?[index]?.matchdetail.venue
     }
     
-    
-    
-}
-
-extension Date {
-    func getDateStringFromStringWanted(string: String, timeZone: TimeZone? = nil) -> String? {
-           let formatter = DateFormatter()
-           formatter.timeZone = timeZone
-           formatter.dateFormat = DateFormattor.yyyyMMddHHmmss.rawValue
-           let dateObj = formatter.date(from: string) ?? self
-           formatter.dateFormat = DateFormattor.yyyyMMddHHmmss.rawValue
-           let newDate = formatter.string(from: dateObj)
-           return newDate
-       }
-}
-
-enum DateFormattor:String {
-    case HHMMAMPM = "HH:mma"
-    case monthDateHHMMAMPM = "LLL dd hh:mma"
-    case yyyyMMddHHmmss = "yyyy-MM-dd HH:mm:ss"
-    case yyyyMMdd = "yyyy-MM-dd"
-    case yyyyMMddHHmmssa = "yyyy-MM-dd HH:mm"
-    case MMMdhmma = "MMM. d, h:mm a"
-    case HHmm = "h:mm a"
-    case d = "dd"
-    case yy = "yyyy"
-    case HH = "HH"
-    case MM = "mm"
-    case mm = "MM"
-    case MMddyyyyhmma = "MM/dd/yyyy h:mm a"
-    case yyyyMMddhmma = "yyyy-MM-dd h:mm a"
-    case ddMMyyyyhmma = "dd-MM-yyyy h:mm a"
 }

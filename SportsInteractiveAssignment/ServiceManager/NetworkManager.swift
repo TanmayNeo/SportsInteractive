@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+///Endpoints shall be added here to be appended with the base URL for API calls
 enum EndPoints : String {
     case matchList1 = "/nzin01312019187360.json"
     case matchList2 = "/sapk01222019186652.json"
@@ -16,7 +17,12 @@ enum EndPoints : String {
 class NetworkManager {
     static let shared = NetworkManager()
     let basePath = "https://demo.sportz.io"
+    
+    private init(){
         
+    }
+        
+    /// This func will return any type of response for GET method and will return either the response or the error in completion
     func getData <T : Codable> (_ endpoint : EndPoints,
                                 toModel : T.Type,
                                 completionHandler : @escaping ((Result<T , Error>) -> ()))  {

@@ -8,8 +8,8 @@
 import Foundation
 
 class MatchDetailsViewModel {
-    var teamHome : Team?
-    var teamAway : Team?
+    private var teamHome : Team?
+    private var teamAway : Team?
     
     init(teamHome: Team? = nil, teamAway: Team? = nil) {
         self.teamHome = teamHome

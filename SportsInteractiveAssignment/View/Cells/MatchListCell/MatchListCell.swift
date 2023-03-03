@@ -17,7 +17,6 @@ class MatchListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,19 +25,24 @@ class MatchListCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //set's up the view of the cell when nib is initialised
     func setupUI(){
-        shadowView.layer.cornerRadius = 5
-        shadowView.layer.shadowColor = UIColor.black.cgColor
-        shadowView.layer.shadowOffset = .zero
-        shadowView.layer.shadowRadius = 3
-        shadowView.layer.shadowOpacity = 0.3
+        shadowView.layer.cornerRadius = ThemeConstants.shadowCornerRadius
+        shadowView.layer.shadowColor = ThemeConstants.shadowColor
+        shadowView.layer.shadowOffset = ThemeConstants.shadowOffset
+        shadowView.layer.shadowRadius = ThemeConstants.shadowRadius
+        shadowView.layer.shadowOpacity = ThemeConstants.shadowOpacity
     }
     
-    func setupData(viewModel : MatchListViewModel, index: Int) {
-        firstTeam.text = viewModel.getHomeTeamShortName(index: index)
-        secondTeam.text = viewModel.getAwayTeamShortName(index: index)
-        matchTiming.text = viewModel.getTimings(index: index)
-        venue.text = viewModel.getVenue(index: index)?.name
+    //set's up the content of the cell
+    func setupData(_ firstTeamName : String?,
+                   secondTeamName : String?,
+                   timing : String?,
+                   stadium : String?) {
+        firstTeam.text = firstTeamName
+        secondTeam.text = secondTeamName
+        matchTiming.text = timing
+        venue.text = stadium
     }
     
 }

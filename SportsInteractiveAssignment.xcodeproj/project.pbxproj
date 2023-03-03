@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1890FB5A29B1BB2300FFBDB0 /* ThemeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890FB5929B1BB2300FFBDB0 /* ThemeConstants.swift */; };
 		18AF970129AF68880099A933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF970029AF68880099A933 /* AppDelegate.swift */; };
 		18AF970529AF68880099A933 /* MatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF970429AF68880099A933 /* MatchListViewController.swift */; };
 		18AF970A29AF688B0099A933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AF970929AF688B0099A933 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1890FB5929B1BB2300FFBDB0 /* ThemeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeConstants.swift; sourceTree = "<group>"; };
 		18AF96FD29AF68880099A933 /* SportsInteractiveAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsInteractiveAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AF970029AF68880099A933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18AF970429AF68880099A933 /* MatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				18BC637729AF7ACC00906E21 /* Constants.swift */,
+				1890FB5929B1BB2300FFBDB0 /* ThemeConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				18F8727A29B111AE00C1E6FE /* PlayerDetailsViewController.swift in Sources */,
 				18F8726E29B09EFD00C1E6FE /* MatchDetailsCell.swift in Sources */,
 				18BC637329AF74F300906E21 /* NetworkManager.swift in Sources */,
+				1890FB5A29B1BB2300FFBDB0 /* ThemeConstants.swift in Sources */,
 				18B1831529B06EB1008D0E4E /* Repository.swift in Sources */,
 				18AF970529AF68880099A933 /* MatchListViewController.swift in Sources */,
 				18F8726A29B0974F00C1E6FE /* MatchDetailsViewController.swift in Sources */,

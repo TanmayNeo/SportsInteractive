@@ -15,4 +15,12 @@ struct Constants {
     static let matchDetailsViewController = "MatchDetailsViewController"
     static let matchDetailsCell = "MatchDetailsCell"
     static let playerDetailsViewController = "PlayerDetailsViewController"
+    static let bowlingStyle = "Bowling Style : "
+    static let bowlingAverage = "Bowling Average : "
+    static let bowlingEconomy = "Bowling Economy : "
+    static let wickets = "Wickets : "
+    static let battingStyle = "Batting Style : "
+    static let battingAverage = "Batting Average : "
+    static let battingStrikeRate = "Batting Strike Rate : "
+    static let runs = "Runs : "
 }

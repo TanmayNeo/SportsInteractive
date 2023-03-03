@@ -25,21 +25,20 @@ class PlayerDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
-        // Do any additional setup after loading the view.
     }
 
-
+    ///Sets up the view of the player details by taking the details of the player and displayong them for corresponding labels
     func setupUI() {
         name.text = player?.displayName
-        bowlingStyle.text = "Bowling Style : \(player?.bowling.style ?? "")"
-        bowlingAvg.text = "Bowling Average : \(player?.bowling.average ?? "")"
-        bowlingEconomy.text = "Bowling Economy : \(player?.bowling.economyrate ?? "")"
-        wickets.text = "Wickets : \(player?.bowling.wickets ?? "")"
+        bowlingStyle.text = Constants.bowlingStyle + (player?.bowling.style ?? "")
+        bowlingAvg.text =  Constants.bowlingAverage + (player?.bowling.average ?? "")
+        bowlingEconomy.text = Constants.bowlingEconomy + (player?.bowling.economyrate ?? "")
+        wickets.text = Constants.wickets + (player?.bowling.wickets ?? "")
         
-        battingStyle.text = "Batting Style : \(player?.batting.style.rawValue ?? "")"
-        battingAvg.text = "batting Average : \(player?.batting.average ?? "")"
-        battingStrikerate.text = "Batting Strike Rate : \(player?.batting.strikerate ?? "")"
-        runs.text = "Runs : \(player?.batting.runs ?? "")"
+        battingStyle.text = Constants.battingStyle + (player?.batting.style.rawValue ?? "")
+        battingAvg.text = Constants.battingAverage + (player?.batting.average ?? "")
+        battingStrikerate.text = Constants.battingStrikeRate + (player?.batting.strikerate ?? "")
+        runs.text = Constants.runs + (player?.batting.runs ?? "")
     }
 
 }
